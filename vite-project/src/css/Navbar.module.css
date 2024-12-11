@@ -1,0 +1,39 @@
+/* .container{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} */
+
+.firstDiv{
+    height: 100%;
+    flex-basis: 33%;
+    padding: 0% 1%;
+
+    display: flex;
+    align-items: center;
+    gap: 3%;
+
+}
+.middleDiv{
+    height: 100%;
+    flex-basis: 33%;
+ 
+    gap: 3%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.lastDiv{
+    height: 100%;
+    flex-basis: 33%;
+    padding:  0% 1%;
+    justify-content: flex-end;
+
+    display: flex;
+    align-items: center;
+}
