@@ -4,15 +4,30 @@ import { Navbar } from './pages/Navbar'
 import Sendmails from './pages/Sendmails'
 import { ToastContainer, toast } from "react-toastify";
 
+import GalleryModal from "./pages/GalleryModal";
+import EmailEditor from "./pages/EmailEditor";
+import SendMailModal from "./pages/SendMailModal";
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [mailContent, setMailContent] = useState("");
 
   return (
     <>
       <Navbar />
       <Sendmails />
-      <p>React + Vite project</p>
+      
+
+      <EmailEditor setMailContent={setMailContent} />
+
+      
+      {/* <GalleryModal isOpen={isGalleryOpen} toggleModal={() => setIsGalleryOpen(!isGalleryOpen)} /> */}
+      {/* <SendMailModal isOpen={true} mailContent={mailContent} /> */}
+
+
+
       <ToastContainer />
     </>
   )
